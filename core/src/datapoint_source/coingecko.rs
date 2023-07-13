@@ -3,8 +3,8 @@ use crate::datapoint_source::assets_exchange_rate::NanoErg;
 use crate::datapoint_source::DataPointSourceError;
 
 use super::ada_usd::Lovelace;
-use super::assets_exchange_rate::Usd;
 use super::assets_exchange_rate::Btc;
+use super::assets_exchange_rate::Usd;
 use super::erg_xau::KgAu;
 
 pub async fn get_kgau_nanoerg() -> Result<AssetsExchangeRate<KgAu, NanoErg>, DataPointSourceError> {

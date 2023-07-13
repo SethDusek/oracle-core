@@ -1,7 +1,7 @@
 use super::assets_exchange_rate::AssetsExchangeRate;
+use super::assets_exchange_rate::Btc;
 use super::assets_exchange_rate::NanoErg;
 use super::assets_exchange_rate::Usd;
-use super::assets_exchange_rate::Btc;
 use super::DataPointSourceError;
 
 #[derive(Debug, Clone)]

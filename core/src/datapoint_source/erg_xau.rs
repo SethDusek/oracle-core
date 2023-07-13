@@ -44,6 +44,7 @@ pub fn nanoerg_kgau_sources() -> Vec<
     ]
 }
 
+// TODO: change to use convert()?
 pub async fn combined_kgau_nanoerg(
 ) -> Result<AssetsExchangeRate<KgAu, NanoErg>, DataPointSourceError> {
     let kgau_usd_rate = bitpanda::get_kgau_usd().await?;

@@ -1,6 +1,6 @@
 use super::assets_exchange_rate::AssetsExchangeRate;
-use super::assets_exchange_rate::Usd;
 use super::assets_exchange_rate::Btc;
+use super::assets_exchange_rate::Usd;
 use super::erg_xau::KgAu;
 use super::DataPointSourceError;
 
