@@ -76,7 +76,7 @@ pub async fn get_btc_nanoerg() -> Result<AssetsExchangeRate<Btc, NanoErg>, DataP
     let resp = reqwest::get(url).await?;
     let price_json = json::parse(&resp.text().await?)?;
     if let Some(p) = price_json["ergo"]["btc"].as_f64() {
-        // Convert from price Erg/BTC to nanoErgs per 1 BTC
+        // Convert from price BTC/ERG to nanoERG/BTC
         let erg_per_usd = NanoErg::from_erg(1.0 / p);
         let rate = AssetsExchangeRate {
             per1: Btc {},
